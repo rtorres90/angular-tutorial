@@ -7,11 +7,11 @@ import {Component} from "@angular/core"
     <h1>
       {{pageTitle}}!!!
     </h1>
-    <div>My first component!!</div>
+    <pm-products></pm-products>
   </div>
   `
 })
 
 export class AppComponent{
-  pageTitle: string = "Acme product managment"
+  pageTitle: string = "Acme product managment";
 }
