@@ -5,7 +5,7 @@ import {Component} from "@angular/core"
   template:`
   <div>
     <h1>
-      {{pageTitle}}!!!
+      {{pageTitle}}
     </h1>
     <pm-products></pm-products>
   </div>
@@ -13,5 +13,5 @@ import {Component} from "@angular/core"
 })
 
 export class AppComponent{
-  pageTitle: string = "Acme product managment";
+  pageTitle: string = "Acme product management";
 }
