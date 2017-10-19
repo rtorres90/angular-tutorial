@@ -44,9 +44,13 @@ export class ProductListComponent implements OnInit {
       "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
     }];
 
-  constructor(){
+  constructor() {
     this.filteredProducts = this.products;
     this.listFilter = 'cart';
+  }
+
+  onRatingClicked(message: string): void {
+    this.pageTitle = 'Product List: ' + message;
   }
 
   performFilter(filterBy: string): IProduct[] {
